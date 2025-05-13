@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "DysHelper",
+  "version": "1.0",
+  "description": "Enhance the web browsing experience for users with dyslexia, making it smoother and more accessible.",
+  "permissions": ["activeTab", "storage", "tts"],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/changeFont.js",
+            "js/popup.js",
+            "js/content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}

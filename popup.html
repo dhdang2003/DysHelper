@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DysHelper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            DysHelper
+        </div>
+    </header>
+    <div class="container">
+        <!-- On/Off -->
+        <div class="item"><img src="image/OnOffIcon.png" width="24px"></div>
+        <div class="item">Enable Extension</div>
+        <div class="item">
+            <label class="switch">
+                <input type="checkbox" id="onOnToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Reader Mode -->
+        <div class="item"><img src="image/ReaderModeIcon.png" width="24px"></div>
+        <div class="item">Reader Mode</div>
+        <div class="item">
+            <label class="switch">
+                <input type="checkbox" id="readerModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Focus Line -->
+        <div class="item"><img src="image/FocusLineIcon.png" width="24px"></div>
+        <div class="item">Focus Line</div>
+        <div class="item">
+            <label class="switch">
+                <input type="checkbox" id="focusLineToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Text To Speech -->
+        <div class="item"><img src="image/TextToSpeechIcon.png" width="24px"></div>
+        <div class="item">Text To Speech</div>
+        <div class="item">
+            <label class="switch">
+                <input type="checkbox" id="textToSpeechToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+<div class="container">
+    <!-- Font -->
+    <div class="item"><img src="image/FontIcon.png" width="24px"></div>
+    <div class="item">Font</div>
+    <div class="item font-select-container">
+        <select id="fontSelect">
+            <option value="OpenDyslexic">OpenDyslexic</option>
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-container">
+            <img src="image/SettingsIcon.png" id="settingsIcon" width="24px" class="footer-icon" title="Settings">
+            <img src="image/SupportIcon.png" id="supportIcon" width="24px" class="footer-icon" title="Support">
+        </div>
+    </footer>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>

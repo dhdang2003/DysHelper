@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extension Options</title>
+    <link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            DysHelper Settings
+        </div>
+    </header>
+    <form id="optionsForm">
+        <!-- Font Selection -->
+        <div class="form-group">
+            <label for="fontSelect">Font:</label>
+            <select id="fontSelect">
+                <option value="OpenDyslexic">OpenDyslexic</option>
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+        </div>
+
+        <!-- Font Size Selection -->
+        <div class="form-group">
+            <label for="sizeSelect">Font Size:</label>
+            <select id="sizeSelect">
+                <option value="12px">Small (12px)</option>
+                <option value="16px">Medium (16px)</option>
+                <option value="20px">Large (20px)</option>
+                <option value="24px">Extra Large (24px)</option>
+            </select>
+        </div>
+
+        <!-- Word Spacing -->
+        <div class="form-group">
+            <label for="spacingSlider">Word Spacing:</label>
+            <input type="range" id="spacingSlider" min="0" max="50" value="0">
+            <span class="range-value" id="spacingValue">0px</span>
+        </div>
+
+        <!-- Line Height -->
+        <div class="form-group">
+            <label for="interlineSlider">Line Height:</label>
+            <input type="range" id="interlineSlider" min="1" max="3" step="0.1" value="1.5">
+            <span class="range-value" id="interlineValue">1.5</span>
+        </div>
+
+<!-- Text Color -->
+<div class="form-group">
+    <label for="textColorPicker">Text Color:</label>
+    <div class="color-picker-container">
+        <input type="color" id="textColorPicker" value="#1F2937">
+        <div class="color-preview" id="textColorPreview" style="background-color: #1F2937;">Aa</div>
+    </div>
+</div>
+
+<!-- Background Color -->
+<div class="form-group">
+    <label for="bgColorPicker">Background:</label>
+    <div class="color-picker-container">
+        <input type="color" id="bgColorPicker" value="#F9FAFB">
+        <div class="color-preview" id="bgColorPreview" style="background-color: #F9FAFB; color: #1F2937;">Aa</div>
+    </div>
+</div>
+
+        <button type="submit">Save Settings</button>
+    </form>
+
+    <script src="js/options.js"></script>
+</body>
+</html>
