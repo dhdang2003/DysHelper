@@ -1,1 +1,1 @@
-# DyslexiAssist-Extension
+# DysHelper-Extension
